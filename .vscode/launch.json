@@ -9,7 +9,8 @@
       "request": "launch",
       "name": "Watney CLI",
       "program": "/home/chris/Code/watney-app/dist/bin/watney-cli.js",
-      "runtimeExecutable": "/home/chris/.nvm/versions/node/v11.11.0/bin/node"
+      "runtimeExecutable": "/home/chris/.nvm/versions/node/v11.11.0/bin/node",
+      "console": "integratedTerminal"
     }
   ]
 }
