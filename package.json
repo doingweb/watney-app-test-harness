@@ -1,0 +1,29 @@
+{
+  "name": "watney-app-test-harness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "watney": {
+    "app": "dist/app.js"
+  },
+  "dependencies": {
+    "watney-app": "^2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.4.1"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist",
+    "cli": "watney-cli",
+    "start": "npm run build && node dist/server.js",
+    "lint": "tslint --project .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
